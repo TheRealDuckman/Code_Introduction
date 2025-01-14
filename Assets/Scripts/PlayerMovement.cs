@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     //movementSpeed er en variabel, der bestemmer bevægelseshastigheden.
     //Vi skriver "public" fordi vi gerne vil kunne tilgå den i Unity Inspector
     //Vi skriver "float" fordi det er et decimaltal
-    //"movementSpeed" er det navn, vi har givet vores variabel. Vi kunne også kalde den "speed", "x" eller "StopMedAtKiggePaaJeresSkaermeNaarJegGennemgaarTingPaaTavlen"
+    //"movementSpeed" er det navn, vi har givet vores variabel. Vi kunne også kalde den "speed", "x" eller "Fortnite4Ever"
    
 
     public float movementSpeed;
@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //SLET DETTE OG SKRIV DEN RIGTIGE FUNKTION FOR BEVÆGELSE HER
+            //INDSÆT DIN KODE HER
         }
 
-       
-        //HVAD SKAL DU SKRIVE HER FOR AT BEVÆGE DIG TIL HØJRE, NÅR DU TRYKKER PÅ HØJRE PILETAST?
+        //INDSÆT DIN KODE HER
+        //HVAD SKAL DU SKRIVE HER FOR AT BEVÆGE KARAKTEREN TIL HØJRE, NÅR DU TRYKKER PÅ HØJRE PILETAST?
 
     }
 }
