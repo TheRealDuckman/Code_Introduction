@@ -19,23 +19,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
-        }
+        float xMovement = Input.GetAxisRaw("Horizontal");
+        float yMovement = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            //INDSÆT DIN KODE HER
-        }
-
-        //INDSÆT DIN KODE HER
-        //HVAD SKAL DU SKRIVE HER FOR AT BEVÆGE KARAKTEREN TIL HØJRE, NÅR DU TRYKKER PÅ HØJRE PILETAST?
-
+        transform.Translate(new Vector3(xMovement, yMovement, 0).normalized * movementSpeed * Time.deltaTime);
     }
 }
